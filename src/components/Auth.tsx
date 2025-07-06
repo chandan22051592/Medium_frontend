@@ -2,8 +2,10 @@ import type{ SignupInput } from "@chandan2312/medium-common";
 import { useState, type ChangeEvent } from "react";
 import {Link,useNavigate} from "react-router-dom";
 import axios from "axios";
-import { BACKEND_URL } from "../config";
 
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+console.log(BACKEND_URL)
 export const Auth = ({type}:{type:"signup" | "signin"}) =>{
     const navigate = useNavigate();
     const [postInputs,setPostInputs] = useState<SignupInput>({
