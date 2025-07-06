@@ -5,7 +5,6 @@ import axios from "axios";
 
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
-console.log(BACKEND_URL)
 export const Auth = ({type}:{type:"signup" | "signin"}) =>{
     const navigate = useNavigate();
     const [postInputs,setPostInputs] = useState<SignupInput>({
