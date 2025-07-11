@@ -22,7 +22,7 @@ export const Hero = () => {
 
       <div className="hidden md:block w-1/2 h-full">
         <img
-          src="/image/test-1.jpg" 
+          src="/image/hero_image.png" 
           alt="Hero side illustration"
           className="h-full w-full "
         />
